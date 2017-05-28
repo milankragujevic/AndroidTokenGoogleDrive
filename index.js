@@ -7,7 +7,8 @@ let app = express();
 app.server = http.createServer(app);
 async function init(body, res) {
     var Auth = new GooglePSAuth({
-        android_id: body.deviceId || '2948EC2AB2043807',   // Android ID
+        android_id: body.deviceId || '2948EC2AB2043807',   // Android ID namtv
+        // android_id: body.deviceId || '4657F3C1DAB642AF',   // Android ID bluestack quyen
         app: 'com.google.android.apps.docs',  // App name
         client_sig: '38918a453d07199354f8b19af05ec6562ced5788',  //Client signature
         service: 'oauth2:https://www.googleapis.com/auth/drive', //OAuth service link
